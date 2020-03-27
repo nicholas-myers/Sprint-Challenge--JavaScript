@@ -30,22 +30,40 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach iterates through the array but does not create a new array.
+.map will iterate and return a new array.
+
 2. What is the difference between a function and a method?
+
+a method is a function nested in an object.
+everything is an object.
+a function would be something outside of an object probably on the global scope
 
 3. What is closure?
 
+Closure is everything enclosed inside curly brackets, ie if a function is nested in another function, the inner function is contained by the outer function.
+inner functions can see outside themselves all the way to the global scope, anything outside the function cannot see inside the function.
+
+
 4. Describe the four rules of the 'this' keyword.
 
+    a. window/global binding, this has no context so it will show all the methods for JS
+    b. implicit Binding: the this function is invoked using dot notation and refers to the object to the left of the dot.
+    c. Explicit Binding: can call, apply or blind, you can pass through your objects as arguments for your function
+    d. New Binding: create a generic object where this points to all the attributes you want to assign to other New Object objects that relate back to the parent object
+
 5. Why do we need super() in an extended class?
+
+super is what tells the parent to bind to the child class
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
 - [ ] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
